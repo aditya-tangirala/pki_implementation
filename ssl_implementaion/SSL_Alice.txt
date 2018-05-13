@@ -1,0 +1,86 @@
+Alice started 
+==============================================================================
+HandShake Phase started at Alice 
+==============================================================================
+Alice generating cert_A 
+cert_A= [
+[
+  Version: V3
+  Subject: CN=RajatSaxena, OU=NetworkSecurity, O=BITS, L=HYD, ST=AP, C=IN
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 129708071461709509970723157228840072137957941506285551524453949246546136175832410207132983711885834631062114133334927167034041999380099350995167729671302345747862704493241580539909778152337012234364849897379893322800682780607999873544678180076909110870601364643191571212309605457858949448496771639344133548503
+  public exponent: 65537
+  Validity: [From: Wed Mar 18 17:24:23 IST 2015,
+               To: Sun Mar 18 17:24:23 IST 2018]
+  Issuer: CN=RajatSaxena, OU=NetworkSecurity, O=BITS, L=HYD, ST=AP, C=IN
+  SerialNumber: [    7e79a32d]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 6C 60 D5 EB 97 E5 0C 4E   11 04 31 B4 91 A9 8E C7  l`.....N..1.....
+0010: 30 8A 61 FE 66 79 F8 27   91 EF 61 5C 61 28 A0 BA  0.a.fy.'..a\a(..
+0020: C0 D4 81 5B DD 7A 10 2B   A2 88 34 66 64 BB 5E 83  ...[.z.+..4fd.^.
+0030: 79 80 24 FB 67 61 40 6E   36 E2 61 C2 EF 91 84 15  y.$.ga@n6.a.....
+0040: DA A8 1D EA 06 5C E9 89   5A E3 41 E6 AA DC 28 08  .....\..Z.A...(.
+0050: 50 25 BF D5 58 FF ED C8   2E 7F 32 8B 02 CE D3 DD  P%..X.....2.....
+0060: C9 91 59 68 37 B6 D6 F2   80 17 7E 43 D2 20 FE EF  ..Yh7......C. ..
+0070: 7F AB 12 D2 22 86 CD 22   8F D5 5F AC 38 6A FC 8F  ...."..".._.8j..
+
+]
+Alice sending talkReq, cipher_supported, cert_A to Bob 
+Alice receiving cert_B  from Bob  
+cert_B= [
+[
+  Version: V3
+  Subject: CN=RajatSaxena, OU=NetworkSecurity, O=BITS, L=HYD, ST=AP, C=IN
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 101482401857105630264123890485013247563733659305537943210056638420244326651558550679459489183068729272328636102523086955524616956627804184575904283094492975457656563885372422804510807008284167541435721312134555958361118734327221426384570997754945391910480585478661878121675754516251666430538006065784435138081
+  public exponent: 65537
+  Validity: [From: Wed Mar 18 17:24:23 IST 2015,
+               To: Sun Mar 18 17:24:23 IST 2018]
+  Issuer: CN=RajatSaxena, OU=NetworkSecurity, O=BITS, L=HYD, ST=AP, C=IN
+  SerialNumber: [    4069b307]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 2B DC A7 3C AD A8 F0 64   0F F5 98 EF DC 09 38 B1  +..<...d......8.
+0010: FA EA 48 A4 A9 5C D7 72   E3 83 D5 E2 1A 82 66 25  ..H..\.r......f%
+0020: 9C 86 8C 85 E2 E5 8A B6   E5 9A B7 E9 72 81 03 22  ............r.."
+0030: 54 71 1F 64 F1 E1 EC C9   E8 45 F6 27 F6 EB 42 A1  Tq.d.....E.'..B.
+0040: 3B C4 D0 72 6E 8A E8 69   42 69 EB 85 F6 FB BC 69  ;..rn..iBi.....i
+0050: D6 5B 8C E4 1E 54 7D F8   13 DE 0A 84 A7 E5 6F D7  .[...T........o.
+0060: 17 81 A8 76 0F 3B 98 BE   90 17 56 51 93 4B E3 23  ...v.;....VQ.K.#
+0070: 95 04 74 DE 3C 36 61 11   AF B3 2D 1F 66 B7 E7 7D  ..t.<6a...-.f...
+
+]
+Alice verifying cert_B 
+cert_B verified  
+Extracting Bob's public key from the certificate  
+Alice generating R_A 
+R_A= 7374626385014502972
+Alice rncrypting and sending R_A 
+Alice receiving and decrypting  encrypted_R_b from Bob 
+R_B= 8018179661046436018
+Alice hashing all exchanged messages+ "Client" using SHA-1 
+Alice sending hashed MAC_A to Bob 
+Alice receiving hashed MAC_B from Bob 
+Alice verifying hashed MAC_B  
+Alice verified hashed MAC_B  
+ Alice generated required keys 
+==============================================================================
+HandShake Phase successfully ended at Alice 
+==============================================================================
+==============================================================================
+Data Exchange Phase started at Alice 
+==============================================================================
+Alice dividing the file into chunks and formulating these chunks into SSL blocks 
+Alice sent the file to Bob 
+==============================================================================
+Data exchange Phase successfully ended at Alice 
+==============================================================================
